@@ -1,0 +1,6 @@
+wheel
+Flask
+Werkzeug
+Flask-Cors
+requests
+docker
