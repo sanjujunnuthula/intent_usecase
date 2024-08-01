@@ -1,7 +1,10 @@
 import traceback
-from flask import request
+
+from common import common_responsor
 from init import app
-from responsors import common_responsor
+from modules.image import image_routes
+
+app.register_blueprint(image_routes.image)
 
 
 @app.errorhandler(500)
@@ -16,5 +19,5 @@ def handle_500(ex):
 #
 #
 #
-# if __name__ == "__main__":
-#     app.run(port=6000)
+if __name__ == "__main__":
+    app.run(port=6000)

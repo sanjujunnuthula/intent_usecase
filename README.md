@@ -1,1 +1,0 @@
-# intent_usecase related to nlp

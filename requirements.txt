@@ -1,6 +1,6 @@
-wheel
-Flask
-Werkzeug
-Flask-Cors
-requests
-docker
+extr==0.0.44
+extr-ds==0.0.86
+pip==24.0
+setuptools==71.0.4
+wheel==0.43.0
+
