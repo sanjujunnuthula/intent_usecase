@@ -13,5 +13,5 @@ WORKDIR /src
 
 COPY . .
 
-CMD gunicorn --worker-class gevent --workers 2 --bind 0.0.0.0:9008 --access-logfile - --error-logfile - app:app
+CMD gunicorn --worker-class gevent --workers 2 --bind 0.0.0.0:9007 --access-logfile - --error-logfile - app:app
 # Specify the command to run your application
