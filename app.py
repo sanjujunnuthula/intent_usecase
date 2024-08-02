@@ -1,5 +1,5 @@
 import traceback
-
+from flask import Flask
 from common import common_responsor
 from init import app
 from modules.intent import intent_routes
