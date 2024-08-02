@@ -1,10 +1,9 @@
 from flask import Blueprint, request
-# from modules.image import image_controller
 from managers import file_manager,text_pattern_manager,nlp_manager
 
-image = Blueprint('image', __name__)
+intent = Blueprint('intent', __name__)
 
 
-@image.route("/nlp/intent", methods=['POST'])
-def intent_on_image():
+@intent.route("/nlp/intent", methods=['POST'])
+def intent_on_text():
     return nlp_manager.intent_on_image(request.args, request.files, request.form)

@@ -1,6 +1,6 @@
 from flask import send_file, jsonify
 
-from modules.image import image_constants
+from modules.intent import image_constants
 
 
 def intent_on_image_success(intent, response):

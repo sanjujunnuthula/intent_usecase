@@ -4,7 +4,7 @@ import re
 from extr import RegEx, RegExLabel
 from extr.entities import create_entity_extractor
 from init import app
-from modules.image import image_constants
+from modules.intent import image_constants
 from utils import app_utils, storage_manager
 from models import evaluation_model
 from managers.text_pattern_manager import Entity_pattern

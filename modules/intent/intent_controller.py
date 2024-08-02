@@ -1,6 +1,6 @@
 # from common import common_responsor
 # from managers import file_manager, nlp_manager,text_pattern_manager
-# from modules.image import image_parser, image_validator, image_responsor, image_constants
+# from modules.intent import image_parser, image_validator, image_responsor, image_constants
 #
 #
 # def intent_on_image(arguments, files, form):
