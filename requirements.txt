@@ -1,6 +1,17 @@
 extr==0.0.44
 extr-ds==0.0.86
-pip==24.0
+pip==24.2
 setuptools==71.0.4
 wheel==0.43.0
+# flask
+pillow
+requests
+retry
+setuptools
+urllib3
+# Werkzeug==2.1.1
+wheel
+matplotlib
 
+Flask==2.2.5
+Werkzeug==2.2.3
