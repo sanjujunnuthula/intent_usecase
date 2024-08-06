@@ -44,13 +44,16 @@ class TextExtractor:
             entity_extractor = create_entity_extractor(entity_patterns)
             if file_extension == ".json":
                 for i in text:
-                    entities = entity_extractor.get_entities(text[i].lower())
+                    # entities = entity_extractor.get_entities(text[i].lower())
+                    print("text[i].......",text[i])
+                    entities = entity_extractor.get_entities(text[i])
                     final_entities.append(entities)
             else:
                 return modify_raw_text(text)
                 for line in text.split("\n"):
                     if line.strip():
-                        entities = entity_extractor.get_entities(line.lower())
+                        # entities = entity_extractor.get_entities(line.lower())
+                        entities = entity_extractor.get_entities(line[i])
                         final_entities.append(entities)
 
             for entities in final_entities:
@@ -79,9 +82,11 @@ def modify_raw_text(raw_text):
     final_entities = []
     for i in raw_text.split("\n"):
         entity_extractor = create_entity_extractor( Entity_pattern().pattern())
-        final_entities.append(entity_extractor.get_entities(i.lower()))
+        # final_entities.append(entity_extractor.get_entities(i.lower()))
+        print("i---------.......", i)
+        final_entities.append(entity_extractor.get_entities(i))
     final_entities
-
+    print("final_entities222222222222222222",final_entities)
     final_dict = []  # creates an empty list
     for i in range(len(final_entities)):
         entities = final_entities[i]
