@@ -1,7 +1,6 @@
 from flask import send_file, jsonify
 
-from modules.intent import image_constants
-
+from modules.intent import intent_constants
 
 def intent_on_image_success(intent, response):
     if response == image_constants.SEND_PREDICTIONS_JSON:
@@ -12,8 +11,8 @@ def intent_on_image_success(intent, response):
 
     if response == image_constants.SEND_PREDICTIONS_BOTH:
         return {
-            "input_url": intent.input_url,
-            "output_url": intent.output_url,
+            # "input_url": intent.input_url,
+            # "output_url": intent.output_url,
             "predictions": intent.predictions
         }
 

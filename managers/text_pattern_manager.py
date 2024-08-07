@@ -13,13 +13,13 @@ class Entity_pattern:
             RegExLabel(
                 label='region',
                 regexes=[
-                    RegEx([r'(["][A-Za-z]{1}["])\s*(?=region)|(?<=region\s)(["][A-Za-z]{1}["]) |(["][Y]{1}["]) |(["][y]{1}["]) |(\sy{1}) |(\sY{1})'], re.IGNORECASE)
+                    RegEx([r'(["][A-Za-z]{1}["])\s*(?=region)|(?<=region\s)(["][A-Za-z]{1}["]) |(["][Y]{1}["]) |(["][y]{1}["]) |(\sy{1}) |(\sY{1}) | ([A-Za-z]{4,15})(?=\s*Region)'], re.IGNORECASE)
                 ]
             ),
             RegExLabel(
                 label='vendor',
                 regexes=[
-                    RegEx([r'(?<=vendor\s)(["][A-Za-z]{1}["]) |(["][X]{1}["]) |(["][x]{1}["]) |(\sx{1}) |(\sX{1})'], re.IGNORECASE)
+                    RegEx([r'(?<=vendor\s)(["][A-Za-z]{1}["]) |(["][X]{1}["]) |(["][x]{1}["]) |(\sx{1}) |(\sX{1}) | ([A-Za-z]{4,15})(?=\s*Vendor) | (?<=vendor\s)([A-Za-z]{4,15}) | ([A-Za-z]{4,15})(?=\s*vendor) | (?<=Vendor\s)([A-Za-z]{4,15})'], re.IGNORECASE)
                 ]
             ),
             RegExLabel(
