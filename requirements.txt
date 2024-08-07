@@ -3,7 +3,5 @@ extr-ds==0.0.86
 pip==24.2
 setuptools==71.0.4
 wheel==0.43.0
-
-
 Flask==2.2.5
 Werkzeug==2.2.3
