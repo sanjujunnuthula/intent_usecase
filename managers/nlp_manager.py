@@ -86,7 +86,7 @@ def modify_raw_text(raw_text):
         print("i---------.......", i)
         final_entities.append(entity_extractor.get_entities(i))
     final_entities
-    print("final_entities222222222222222222",final_entities)
+    # print("final_entities222222222222222222",final_entities)
     final_dict = []  # creates an empty list
     for i in range(len(final_entities)):
         entities = final_entities[i]
