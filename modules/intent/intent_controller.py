@@ -4,7 +4,7 @@ def intent_extractor(args,files,json):
     try:
         raw_text = json['text-intent']
         result = nlp_manager.TextExtractor(files,raw_text).extract_entities()
-        print("result122222",result)
+        # print("result122222",result)
         return result
     except Exception as err:
         print("in exception",str(err))

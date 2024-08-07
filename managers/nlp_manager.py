@@ -4,11 +4,9 @@ import re
 from extr import RegEx, RegExLabel
 from extr.entities import create_entity_extractor
 from init import app
-from models import evaluation_model
 from managers.text_pattern_manager import Entity_pattern
 import os
 from retry import retry
-from common import common_constants
 import json
 
 class TextExtractor:
@@ -83,7 +81,7 @@ def modify_raw_text(raw_text):
     for i in raw_text.split("\n"):
         entity_extractor = create_entity_extractor( Entity_pattern().pattern())
         # final_entities.append(entity_extractor.get_entities(i.lower()))
-        print("i---------.......", i)
+        # print("i---------.......", i)
         final_entities.append(entity_extractor.get_entities(i))
     final_entities
     # print("final_entities222222222222222222",final_entities)

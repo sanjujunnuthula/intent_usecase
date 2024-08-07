@@ -1,6 +1,5 @@
 import traceback
 from flask import Flask
-from common import common_responsor
 from init import app
 from modules.intent import intent_routes
 
@@ -17,4 +16,4 @@ def handle_500(ex):
 
 
 if __name__ == "__main__":
-    app.run(port=1971)
+    app.run(port=6701)
