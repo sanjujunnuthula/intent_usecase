@@ -4,7 +4,7 @@ pip==24.2
 setuptools==71.0.4
 wheel==0.43.0
 requests
-
+retry
 
 Flask==2.2.5
 Werkzeug==2.2.3
