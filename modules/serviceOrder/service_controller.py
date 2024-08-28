@@ -56,7 +56,7 @@ def create_service_request(data):
         # print("while request to camunda", json.dumps(data, indent=4))
         response = requests.post(url=common_constants.CAMUNDA_SERVICE_BASE_URL,
                                  json=raw_request)
-        # print("response from camunda", response)
+        print("response from camunda", response)
         return response
     except Exception as err:
         # print("while creating request", str(err))
